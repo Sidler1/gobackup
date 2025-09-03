@@ -55,7 +55,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           build-args: VERSION=${{ steps.tagName.outputs.tag }}
           tags: |
-            huacnlee/gobackup:${{ steps.tagName.outputs.tag }}
+            sidler2/gobackup:${{ steps.tagName.outputs.tag }}
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
